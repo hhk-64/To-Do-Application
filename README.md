@@ -1,3 +1,3 @@
-# to_do_application
+# To Do Application
 
-A new Flutter project.
+A flutter based To Do Application I am working on
