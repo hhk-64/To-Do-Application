@@ -6,6 +6,7 @@ import 'package:to_do_application/task.dart';
 void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(TaskAdapter());
+  Hive.registerAdapter(TListAdapter());
   await Hive.openBox('mybox');
 
   runApp(const MainApp());

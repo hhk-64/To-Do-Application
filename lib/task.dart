@@ -102,3 +102,16 @@ class _TaskState extends State<Task> {
     );
   }
 }
+
+@HiveType(typeId: 2)
+class TList {
+  TList({
+    required this.title,
+    required this.list,
+  });
+
+  @HiveField(0)
+  String title;
+  @HiveField(1)
+  List<Task> list;
+}
